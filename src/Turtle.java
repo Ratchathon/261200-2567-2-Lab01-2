@@ -43,45 +43,50 @@ public class Turtle implements Runnable, ActionListener, MouseListener, MouseMot
     {
         Turtle bob = new Turtle();
 
-        bob.penColor("blue");
+        bob.penColor("aqua");
         bob.width(5);
         bob.speed(2);
         bob.down();
-        for(int i = 0;i<360;i++)
+        for(int i = 0;i<6;i++)
         {
-            bob.left(1);
-            bob.forward(0.5);
+            bob.left(60);
+            bob.forward(20);
         }
-        for(int j =0;j < 4;j++
+        for(int count = 0;count < 6 ;count++)
         {
-            bob.right(90);
+            bob.right(60);
+            bob.forward(10);
+            bob.right(60);
+            bob.forward(10);
+            bob.right(180);
+            bob.forward(10);
+            bob.right(60);
+            bob.forward(10);
+            bob.right(180);
+            bob.forward(10);
+            bob.left(120);
+            bob.forward(10);
+            bob.right(60);
+            bob.forward(10);
+            bob.right(180);
+            bob.forward(10);
+            bob.right(60);
+            bob.forward(10);
+            bob.right(180);
+            bob.forward(10);
+            bob.left(120);
+            bob.forward(10);
+            bob.right(180);
             bob.forward(30);
+            bob.right(60);
+            bob.forward(20);
+
         }
-//        bob.forward(60);    // move 30 units (pen down = draw a line)
-//        bob.left(90);       // turn left for 90 degrees
-//        bob.up();           // pick pen (tail) up
-//        bob.forward(80);    // move 40 units (pen up = no drawing)
-//        bob.penColor("green"); // change pen color
-//        bob.down();         // put pen (tail) down (so it's ready to draw)
-//        bob.right(216.87);  // turn right for 216.87 degrees
-//        bob.forward(100);     // move 50 units (pen down = draw a line)
-//
-//        bob.up();
-//        bob.forward(150);
-//        bob.right(143.14);
-//        bob.down();
-//
-//        // random things
-//        bob.home();
-//        bob.penColor("orange");
-//        for(int i=0;i<250;i++) {
-//            bob.forward(i/25.);
-//            bob.width(i*0.1);
-//            bob.left(5);
-//            if(i%10==0)
-//                bob.dot("red",i*0.2);
-//        }
-    }
+        bob.up();
+        bob.right(90);
+        bob.forward(100);
+
+     }
 
     // ========================= Don't modify the code after this point! ========================= //
     private static ArrayList<Turtle> turtles;
